@@ -137,6 +137,7 @@ def delete_google_calendar_event(request, event_id):
         return False
 
 
+
 def create_google_calendar_event(request, user, summary):
     service, is_connected = get_service(request)
     if not is_connected:
